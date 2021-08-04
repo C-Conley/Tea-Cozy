@@ -1,4 +1,9 @@
 * {
+    margin: 0;
+    padding: 0;
+}
+
+body, a {
     font-family: Helvetica, sans-serif;
     font-size: 22px;
     color: seashell;
@@ -6,3 +11,31 @@
     opacity: 0.9;
     text-align: center;
 }
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header {
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 50px;
+    padding-left: 10px;
+}
+
+.navigation, li {
+    display: flex;
+    list-style-type: none;
+    text-decoration: underline;
+    padding: 10px;
+}
+
