@@ -1,41 +1,113 @@
+/*RESET*/
+
 * {
     margin: 0;
     padding: 0;
 }
 
-body, a {
-    font-family: Helvetica, sans-serif;
+/*GLOBAL*/
+
+body {
+    font-family: "Helvetica", Arial, sans-serif;
     font-size: 22px;
+    line-height: normal;
+    text-align: center;
     color: seashell;
     background-color: black;
     opacity: 0.9;
-    text-align: center;
 }
 
-.flex-container {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
+/*NAV BAR*/
 
 header {
     height: 69px;
+    width: 100%;
+    top: 0px;
+    z-index: 10;
     border-bottom: 1px solid seashell;
     position: fixed;
-    top: 0px;
-    width: 100%;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
+    background-color: black;
 }
 
 .logo {
     height: 50px;
-    padding-left: 10px;
+    margin-left: 10px;
 }
 
-.navigation, li {
+.navigation {
     display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    margin: 0;
     list-style-type: none;
-    text-decoration: underline;
-    padding: 10px;
 }
 
+.navigation a {
+    text-decoration: underline;
+    display: block;
+    color: seashell;
+    margin: 0 20px;
+}
+
+.navigation a:hover {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 700px) {
+    .navigation {
+        flex-flow: column wrap;
+        padding: 0;
+    }
+    .navigation a {
+        text-align: center;
+        padding: 5px;
+    }
+
+    header {
+        height: auto;
+    }
+}
+
+/*MISSION SECTION*/
+
+.mission-box {
+    display: flex;
+    position: relative;
+    top: 70px;
+    height: 700px;
+    width: 1200px;
+    background-image: url(/assets/img-mission-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    margin: auto;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .mission-box {
+        width: auto;
+    }
+
+    .mission-box h2, h4{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .mission-box {
+        top: 108px;
+    }
+    
+}
+
+.mission-box h2, h4 {
+    background-color: black;
+    padding: 10px;
+    width: 100%;
+}
