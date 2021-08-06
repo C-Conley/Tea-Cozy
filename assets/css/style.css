@@ -17,6 +17,13 @@ body {
     opacity: 0.9;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /*NAV BAR*/
 
 header {
@@ -75,16 +82,13 @@ header {
 
 .mission-box {
     display: flex;
-    position: relative;
-    top: 70px;
+    margin-top: 70px;
     height: 700px;
     width: 1200px;
     background-image: url(/assets/img-mission-background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    align-items: center;
-    margin: auto;
     flex-flow: column wrap;
     justify-content: center;
 }
@@ -99,15 +103,50 @@ header {
     }
 }
 
-@media screen and (max-width: 700px) {
-    .mission-box {
-        top: 108px;
-    }
-    
-}
 
 .mission-box h2, h4 {
     background-color: black;
     padding: 10px;
     width: 100%;
 }
+
+/*FEATURE TEA SECTION*/
+
+.feature-tea-box {
+    position: relative;
+    background-color: black;
+    justify-content: center;
+    padding: 70px;
+    display: flex;
+    flex-flow: column wrap;
+    width: 1000px;
+}
+
+.feature-tea-box h2, h4 {
+    background-color: black;
+    padding: 10px;
+    width: 100%;
+}
+
+.tea-types-box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.tea-types-box img {
+    height: 200px;
+    width: 300px;
+    margin: 20px 10px 5px 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .feature-tea-box {
+        width: auto;
+    }
+
+    .feature-tea-box h2, h4{
+        width: auto;
+    }
+}
+
