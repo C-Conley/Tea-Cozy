@@ -83,7 +83,7 @@ header {
     display: flex;
     height: 700px;
     width: 1200px;
-    background-image: url("assets/img-locations-background.jpg");
+    background-image: url("../img-mission-background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -144,7 +144,7 @@ header {
     flex-flow: column wrap;
     height: 500px;
     width: 1200px;
-    background-image: url("assets/img-locations-background.jpg");
+    background-image: url("../img-locations-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
